@@ -1,0 +1,23 @@
+{
+	"name": "Motivational Quotes",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"author": "Corey Lynch",
+	"description": "This extention randomly generates motivational quotes along with their authors.",
+	"icons": {
+			"16": "./logo.png",
+			"32": "./logo.png",
+			"48": "./logo.png",
+			"128": "./logo.png"
+		},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"]
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Hello"
+	}
+}
